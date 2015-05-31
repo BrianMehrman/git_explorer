@@ -1,0 +1,53 @@
+.event-logo {
+  height: 120px;
+}
+
+
+.events > li {
+  margin-bottom: 0.5em;
+}
+
+.chart {
+  border: 1px dotted #111;
+
+}
+.chart.bar {
+  padding: 1em 0;
+  margin-bottom: 1em;
+}
+.chart.line{
+  height: 20em;
+}
+.chart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
+.active {
+  color:grey;
+}
+
+.chart svg text {
+  fill: #333;
+}
+
+
+.axis path {
+    fill: none;
+    stroke: #777;
+    shape-rendering: crispEdges;
+}
+.axis text {
+    font-family: Lato;
+    font-size: 13px;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}

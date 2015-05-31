@@ -1,0 +1,21 @@
+{
+  "name": "git_explorer",
+  "version": "0.0.1",
+  "authors": [
+    "brianmehrman <bcmehrman@gmail.com>"
+  ],
+  "description": "test githubapi",
+  "main": "app/index.html",
+  "keywords": [
+    "node",
+    "github"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

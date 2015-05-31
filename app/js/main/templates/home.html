@@ -1,0 +1,20 @@
+<div class="larger-12 columns">
+  <div class="row">
+    <div class="large-12 columns">
+      <form ng-submit="searchUser(current_user)" >
+        <div class="row collapse postfix-round">
+          <div class="small-3 columns">
+            <span class="prefix">Search for a user</span>
+            </div>
+          <div class="small-7 columns">
+            <input type="text" placeholder="Username" ng-enter="searchUser(current_user)" ng-model="current_user" tabindex="1">
+          </div>
+          <div class="small-2 columns">
+            <a href="#" class="button postfix" ng-click="searchUser(current_user)" ><i class="fa fa-search"></i></a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>

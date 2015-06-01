@@ -24,8 +24,8 @@ angular.module('mainApp')
         $scope.search_loading=true;
         $scope.error_msg=undefined;
         var pages = [];
-
-        for(var i=0;i<10;i++){ pages.push($scope.getEventPage(user_name,i+1));}
+        // load ten pages at a time
+        for(var i=0;i<10;i++){pages.push($scope.getEventPage(user_name,i+1));}
 
         $q.all(pages).then(function(data_sets){
           var d = [].concat.apply([],data_sets);
@@ -57,7 +57,6 @@ angular.module('mainApp')
           }
         }
         for(var t in types){ out.push(types[t]);}
-
         return out;
       }
 

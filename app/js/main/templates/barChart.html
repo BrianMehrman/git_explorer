@@ -29,7 +29,7 @@
     <h3 class="large-12 columns">{{search_message}}</h3>
     <div class="large-12 columns text-center" ng-if="search_loading"><i class="fa fa-gear fa-spin"></i></div>
 
-    <d3-bars class="large-12 columns chart bar" data="chartData" label="title"></d3-bars>
+    <d3-bars class="large-12 columns chart bars" data="chartData" label="title"></d3-bars>
 
     <div class="large-12 columns" ng-if="events==undefined&&error_msg!=undefined" >
       <p>{{error_msg}}</p>

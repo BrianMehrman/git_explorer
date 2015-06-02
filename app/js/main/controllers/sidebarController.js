@@ -5,7 +5,7 @@ angular.module('mainApp')
   .controller('sidebarController', ["$scope", "$state", "$cookieStore", "GithubEvents", function($scope, $state, $cookieStore, GithubEvents) {
       // create a message to display in our view
 
-      var updateUserList = function(){
+      $scope.updateUserList = function(){
         $scope.users=[];
 
         var usernames = $cookieStore.get("valid_usernames");
@@ -22,10 +22,10 @@ angular.module('mainApp')
         }
       }
 
-      updateUserList();
+      $scope.updateUserList();
 
       $scope.$watch(function() { return $cookieStore.get("valid_usernames"); }, function(){
-        updateUserList();
+        $scope.updateUserList();
       });
 
   }]);

@@ -1,8 +1,8 @@
 'use strict';
 // create the controller and inject Angular's $scope
 angular.module('mainApp')
-  .controller('barChartController', ["$scope", "$q", "$stateParams", "$cookieStore","GithubEvents", "GithubService",
-   function($scope, $q, $stateParams, $cookieStore, GithubEvents, GithubService) {
+  .controller('barChartController', ["$scope", "$q", "$stateParams", "$cookieStore","GithubEvents",
+   function($scope, $q, $stateParams, $cookieStore, GithubEvents) {
       // create a message to display in our view
       $scope.search_loading = false;
       $scope.chartData = [];

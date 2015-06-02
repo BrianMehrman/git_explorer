@@ -19,7 +19,6 @@ angular.module('d3')
         if (this.readyState == 'complete') onScriptLoad();
       }
       scriptTag.onload = onScriptLoad;
-      console.log("test");
       var s = $document[0].getElementsByTagName('body')[0];
       s.appendChild(scriptTag);
 

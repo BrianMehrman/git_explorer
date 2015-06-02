@@ -4,9 +4,6 @@ angular.module('mainApp.directives')
    //camel cased directive name
    //in your HTML, this will be named as bars-chart
   .directive('d3Lines', ['d3Service', function(d3Service) {
-
-
-
     return {
       restrict: 'EA',
       scope: {

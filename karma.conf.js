@@ -15,6 +15,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'app/js/vendor/d3.v3.min.js',
       'app/js/vendor/jquery.js',
       'spec/components/angular/angular.js',
       'spec/components/angular-mocks/angular-mocks.js',
@@ -23,7 +24,9 @@ module.exports = function(config) {
       'https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-resource.js',
       'https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-cookies.js',
       'app/js/**/**.js',
-      'spec/js/**/*.test.js'
+      'spec/js/**/*.test.js',
+      // fixtures
+      {pattern: 'spec/support/mock/*.json', watched: true, served: true, included: false}
     ],
 
 

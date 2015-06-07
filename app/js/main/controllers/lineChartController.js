@@ -56,6 +56,7 @@ angular.module('mainApp')
             types[time][type] = 1;
           }
         }
+        // flatten types object into an array
         for(var t in types){ out.push(types[t]);}
         return out;
       }

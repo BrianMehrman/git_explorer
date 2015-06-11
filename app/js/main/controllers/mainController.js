@@ -7,7 +7,7 @@ angular.module('mainApp')
       $scope.search_loading = false;
 
       $scope.searchUser = function(user_name){
-        $state.go("home.graph", {username: user_name});
+        $state.go("bar", {username: user_name});
       }
 
   }]);

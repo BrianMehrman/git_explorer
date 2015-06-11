@@ -19,10 +19,6 @@ angular
       url: '/',
       templateUrl : 'js/main/templates/home.html',
       controller  : 'mainController'
-    }).state('graph', {
-      url: '/graph/:username',
-      templateUrl : 'js/main/templates/graph.html',
-      controller  : 'graphController'
     }).state('bar', {
       url: '/bar/:username',
       templateUrl : 'js/main/templates/barChart.html',
